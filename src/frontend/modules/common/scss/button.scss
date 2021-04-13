@@ -1,0 +1,45 @@
+.button {
+  margin: 10px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+
+  .icon {
+    font-size: 90%;
+  }
+
+  &.v-secondary {
+    background-color: #f8f9fa;
+    color: #0c0f48;
+
+    &.is-active {
+      color: #fff;
+      background-color: #545b62;
+      border-color: #4e555b;
+    }
+  }
+  &.v-primary {
+    background-color: #3dc6c1;
+    color: #ffffff;
+  }
+}
+
+.theme-dark {
+  .button {
+    &.v-secondary {
+      background-color: #2e3241;
+      color: #fff;
+
+      &.is-active {
+        color: #fff;
+        background-color: #545b62;
+        border-color: #4e555b;
+      }
+    }
+  }
+}

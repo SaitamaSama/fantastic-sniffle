@@ -1,0 +1,132 @@
+.data-table {
+  width: calc(100% - 60px);
+  margin: 0 30px;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+
+  thead {
+    tr {
+      th {
+        color: #0c0f48;
+        padding: 0 12px;
+        font-size: 16px;
+        opacity: 0.45;
+        letter-spacing: 1px;
+        margin: 0 0 -5px;
+      }
+    }
+  }
+  tbody {
+    tr {
+      background-color: #f8f9fa;
+      td:first-child {
+        border-radius: 10px 0 0 10px;
+      }
+      td {
+        color: #0c0f48;
+        padding: 0.7rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        vertical-align: middle;
+        font-size: 16px;
+        margin: 0;
+        opacity: 1;
+        text-align: center;
+        font-weight: bold;
+
+        .savings {
+          .arr {
+            font-size: 25px;
+            line-height: 1;
+            margin-right: 10px;
+          }
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &.green {
+          color: #5dc7c2;
+        }
+        &.red {
+          color: #da5757;
+        }
+
+        .platform {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+
+          .platform-img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            border-radius: 50%;
+          }
+        }
+      }
+      td:last-child {
+        border-radius: 0 10px 10px 0 0;
+      }
+    }
+  }
+}
+
+.theme-dark {
+  .data-table {
+    thead {
+      tr {
+        th {
+          color: #7f8288;
+          font-weight: 500;
+          font-size: 24px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        background-color: #2e3241;
+        td {
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 1.2;
+
+          &.green {
+            color: #5dc7c2;
+          }
+          &.red {
+            color: #da5757;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+
+    thead {
+      tr {
+        th {
+          font-size: 10px !important;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 6px 3px !important;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

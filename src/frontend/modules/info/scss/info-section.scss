@@ -1,0 +1,12 @@
+.info-section {
+  display: flex;
+  padding: 0 30px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .info-section {
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+}
